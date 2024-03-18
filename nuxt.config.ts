@@ -10,6 +10,11 @@ export default defineNuxtConfig({
       'Ole': true,
       'Poppins': true,
       'Ojuju': true,
+      'Qwigley': true,
+      'Ballet': true,
+      'Kablammo': true,
+      'Lalezar': true,
+      'Noto Serif JP': true,
     },
   },
 
