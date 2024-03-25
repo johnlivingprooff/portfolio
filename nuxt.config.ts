@@ -20,5 +20,9 @@ export default defineNuxtConfig({
 
   plugins: [
 
-  ]
-})  
+  ],
+  target: 'static',
+  router: {
+    base: '/portfolio/',
+  },
+});
