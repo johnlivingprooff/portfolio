@@ -7,12 +7,17 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
+    "deploy": "gh-pages -d dist",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
     "@nuxtjs/google-fonts": "^3.2.0",
-    "nuxt": "^3.10.3",
+    "@vue/reactivity": "^3.4.21",
+    "nuxt": "^3.11.2",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }

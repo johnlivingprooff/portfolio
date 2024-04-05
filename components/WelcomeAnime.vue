@@ -178,7 +178,7 @@ export default {
 .container {
     background-color: #000000;
     background-color: #0f0f0f;
-    background-image: url('/img/stars.jpg');
+    background-image: url('../public/img/stars.jpg');
     background-repeat: repeat;
     background-size: contain;
     height: 100vh;
