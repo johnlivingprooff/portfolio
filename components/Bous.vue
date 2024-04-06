@@ -5,58 +5,79 @@
       <p>/βοῦς/</p>
     </div>
     <div class="line">
-      <span>
-        <h2>2020</h2>
-        <i>Holding Lamps for a Distrought generation, we are light</i>
+      <span v-for="(line, index) in lineData" :key="index">
+        <h2>{{ line.year }}</h2>
+        <NuxtLink :to="'/blog/' + line.id">
+          {{ line.description }}
+        </NuxtLink>
       </span>
-      <span>
-        <h2>2021</h2>
-        <i>A Comic relief in an Isolated World, take advantage</i>
-      </span>
-      <span>
-        <h2>2022</h2>
-        <i>Can we really do the most? we do what we can, without limit</i>
-      </span>
-      <span>
-        <h2>2023</h2>
-        <i>The herald of a new dawn, for lightbearers. Join God's kids ;)</i>
-      </span>     
       <br><br><br>
     </div>
-    <div class="window">
-      <img v-for="image in slideshowImages" :src="image" :key="image" class="slideshow-image" />
+    <div class="window" ref="window" @mouseover="stopScroll" @mouseleave="startScroll">
+      <div class="slideshow">
+        <img v-for="(image, index) in slideshowImages" :src="image" :key="index" class="slideshow-image" />
+      </div>
+      <img src="../public/img/scroll.png" alt="scroll" class="scrl">
     </div>
   </div>
 </template>
 
 <script>
-import { ref, onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
 
 export default {
- setup() {
-    const slideshowImages = ref([
-      '/img/shoes.jpg',
-      '/img/flower-home.jpg',
-      '/img/computer-open.jpg',
-    ]);
+  async setup() {
+    const slideshowImages = ref([]);
 
-    let currentIndex = 0;
-    let interval;
+    const fetchImages = async () => {
+      const images = import.meta.glob('../public/img/slides/*.jpg');
+      const importedImages = await Promise.all(Object.values(images).map(i => i()));
+      slideshowImages.value = importedImages.map(module => module.default);
+    };
+
+    // Call fetchImages before using any await statement
+    fetchImages();
+
+    const currentIndex = ref(0);
+    let intervalId = null;
 
     const slideShow = () => {
-      interval = setInterval(() => {
-        currentIndex = (currentIndex + 1) % slideshowImages.value.length;
+      intervalId = setInterval(() => {
+        currentIndex.value = (currentIndex.value + 1) % slideshowImages.value.length;
       }, 2000);
     };
 
-    onMounted(() => {
+    const stopScroll = () => {
+      clearInterval(intervalId);
+    };
+
+    const startScroll = () => {
       slideShow();
+    };
+
+    // Call onMounted after fetchImages
+    onMounted(() => {
+      currentIndex.value = Math.floor(Math.random() * slideshowImages.value.length);
+      slideShow();
+    });
+
+    const lineData = computed(() => {
+      return [
+        { id: '1', year: '2020', description: 'Holding Lamps for a Distrought generation, we are light', },
+        { id: '2', year: '2021', description: 'A Comic relief in an Isolated World, take advantage', },
+        { id: '3', year: '2022', description: 'Can we really do the most? we do what we can, without limit', },
+        { id: '4', year: '2023', description: "The herald of a new dawn, for lightbearers. Join God's kids ;)", }
+      ];
     });
 
     return {
       slideshowImages,
+      currentIndex,
+      stopScroll,
+      startScroll,
+      lineData
     };
- },
+  },
 };
 </script>
 
@@ -110,7 +131,7 @@ export default {
   letter-spacing: 5px;
 }
 
-.line i {
+.line a {
   color: white;
   font-size: 20px;
   font-family: 'Noto Serif JP', serif;
@@ -119,22 +140,39 @@ export default {
   white-space: normal;
   padding: 0 30px;
   margin: 0 30px;
+  text-decoration: none;
+}
+
+.line a:hover {
+  color: #f0f0f0;
+  transition: 0.5s;
+  text-decoration: underline;
 }
 
 .window {
   height: 100vh;
   width: 100%;
-  overflow: hidden;
+  overflow-y: auto;
   display: inline-block;
   transition: all ease-in-out 0.3s;
-  filter: blur(5px);
+  filter: blur(1px);
   padding: 10px;
   color: white;
   font-family: 'Noto Serif JP', serif;
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  scrollbar-arrow-color: beige;
+  border-radius: 20px;
+}
+
+.slideshow {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .slideshow-image {
-  height: 100%;
+  height: 98vh;
   width: 100%;
   object-fit: cover;
 }
@@ -142,6 +180,17 @@ export default {
 .window:hover {
   filter: blur(0px);
   transition: all ease-in-out 0.3s;
-  transform: scale(0.9);
+  transform: scale(0.98);
+}
+
+.scrl {
+  position: fixed;
+  bottom: 45px;
+  right: 50px;
+  width: 35px;
+  margin: 0 10px;
+  filter: invert(1);
+  transition: 0.5s;
+  text-shadow: 10px 5px 10px #000000;
 }
 </style>

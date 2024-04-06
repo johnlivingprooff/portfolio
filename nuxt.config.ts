@@ -22,7 +22,7 @@ export default defineNuxtConfig({
 
   ],
   app: {
-    baseURL: '/portfolio/',
+    // baseURL: '/portfolio/',
     // buildAssetsDir: 'assets',
   }
 });

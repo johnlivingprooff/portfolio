@@ -54,6 +54,34 @@ export default {
 </script>
 
 <style>
+/* Define scrollbar width and color */
+::-webkit-scrollbar {
+  width: 8px; /* Adjust as needed */
+  height: 8px; /* Adjust as needed */
+}
+
+/* Define scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(30, 30, 29); /* Adjust to your dark theme color */
+  border-radius: 4px; /* Adjust as needed */
+}
+
+/* Define scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Adjust as needed */
+}
+
+/* Define scrollbar corner */
+::-webkit-scrollbar-corner {
+  background-color: transparent; /* Adjust as needed */
+}
+
+/* Hide scrollbar buttons (arrows) */
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+
 body {
   margin: 0;
   padding: 0;
@@ -62,7 +90,6 @@ body {
   background-repeat: repeat;
   background-size: contain;
   font-family: sans-serif;
-  scrollbar-width: thin;
 }
 
 .card {

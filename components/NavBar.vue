@@ -39,7 +39,7 @@ export default {
 
 <style scoped>
 .navbar {
-    margin: 8px;
+    margin: 2px;
     display: flex;
     flex-direction: column;
     position: fixed;
