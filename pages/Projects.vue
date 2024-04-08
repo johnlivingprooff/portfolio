@@ -1,15 +1,18 @@
 <template>
     <div class="containr">
-      <br><br><br><br><br><br>
+      <NavBar2 />
+      <br><br><br><br>
       <Icon />
+      <br><br>
       <div class="cards">
+        <h2>Some of My WWW's</h2>
+        <br>
         <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        <h2>Bye</h2>
       </div>
+      <br><br><br><br>
+      <Line />
+      <Contact id="contact" />
     </div>
   </template>
   
@@ -21,18 +24,27 @@
   body {
     margin: 0;
     padding: 0;
-    background-color: #0f0f0f;
-    background-image: url('../public/img/slides/erik-mclean-QzpgqElvSiA-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('../public/img/slider/1.jpg');
+    background-repeat: repeat;
+    /* background-size: cover; */
     font-family: sans-serif;
+    background-position: center;
   }
 
   .containr {
-    position: absolute;
     width: 100%;
-    height: 100%;
-    background-color: #0f0f0f96;
+    height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cards h2 {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2.5em;
+    font-family: 'Lalezar', cursive;
   }
 
   </style>

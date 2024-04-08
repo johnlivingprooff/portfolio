@@ -18,8 +18,7 @@
     <Bous id="blog" />
     <br><br><br><br><br>
     <Line />
-    <br><br><br><br><br>
-
+    <Contact id="contact" />
   </div>
 </template>
 
