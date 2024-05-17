@@ -20,11 +20,11 @@
   
   </script>
   
-  <style>
+  <style scoped>
   body {
     margin: 0;
     padding: 0;
-    background-image: url('../public/img/slider/1.jpg');
+    background-image: url('../public/img/slides/1.jpg');
     background-repeat: repeat;
     /* background-size: cover; */
     font-family: sans-serif;

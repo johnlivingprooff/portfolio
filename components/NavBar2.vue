@@ -4,7 +4,6 @@
             v-for="link in links"
             :key="link.id"
             :to="link.url"
-            :class="{ active: isActive(link.url), inactive: !isActive(link.url) }"
             class="link"
         >
             {{ link.label }}
