@@ -1,12 +1,12 @@
 <template>
   <div>
     <span class="icon">
-        <img src="/img/icon.png" alt="logo">
+        <img src="../public/img/icon.png" alt="logo">
     </span>
   </div>
 </template>
 
-<script lang="ts" setup>
+<script>
 
 </script>
 

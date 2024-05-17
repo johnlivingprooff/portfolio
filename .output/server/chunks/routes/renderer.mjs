@@ -1,5 +1,5 @@
 import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'vue-bundle-renderer/runtime';
-import { e as eventHandler, s as setResponseHeader, a as send, g as getResponseStatus, b as setResponseStatus, u as useNitroApp, c as setResponseHeaders, j as joinURL, d as useRuntimeConfig, f as getQuery, h as createError, i as getRouteRules, k as getResponseStatusText } from '../runtime.mjs';
+import { e as eventHandler, s as setResponseHeader, a as send, g as getResponseStatus, b as setResponseStatus, u as useNitroApp, c as setResponseHeaders, j as joinRelativeURL, d as useRuntimeConfig, f as getQuery, h as createError, i as getRouteRules, k as getResponseStatusText } from '../runtime.mjs';
 import { stringify, uneval } from 'devalue';
 import { renderToString } from 'vue/server-renderer';
 import { renderSSRHead } from '@unhead/ssr';
@@ -99,16 +99,25 @@ const appRootId = "__nuxt";
 
 const appRootTag = "div";
 
+const appTeleportTag = "div";
+
+const appTeleportId = "teleports";
+
+const componentIslands = false;
+
+function baseURL() {
+  return useRuntimeConfig().app.baseURL;
+}
 function buildAssetsDir() {
   return useRuntimeConfig().app.buildAssetsDir;
 }
 function buildAssetsURL(...path) {
-  return joinURL(publicAssetsURL(), buildAssetsDir(), ...path);
+  return joinRelativeURL(publicAssetsURL(), buildAssetsDir(), ...path);
 }
 function publicAssetsURL(...path) {
   const app = useRuntimeConfig().app;
   const publicBase = app.cdnURL || app.baseURL;
-  return path.length ? joinURL(publicBase, ...path) : publicBase;
+  return path.length ? joinRelativeURL(publicBase, ...path) : publicBase;
 }
 
 globalThis.__buildAssetsURL = buildAssetsURL;
@@ -139,23 +148,23 @@ const getSSRRenderer = lazyCachedFunction(async () => {
   const renderer = createRenderer(createSSRApp, options);
   async function renderToString$1(input, context) {
     const html = await renderToString(input, context);
-    return `<${appRootTag}${` id="${appRootId}"` }>${html}</${appRootTag}>`;
+    return APP_ROOT_OPEN_TAG + html + APP_ROOT_CLOSE_TAG;
   }
   return renderer;
 });
 const getSPARenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();
-  const spaTemplate = await import('../virtual/_virtual_spa-template.mjs').then((r) => r.template).catch(() => "");
+  const spaTemplate = await import('../virtual/_virtual_spa-template.mjs').then((r) => r.template).catch(() => "").then((r) => APP_ROOT_OPEN_TAG + r + APP_ROOT_CLOSE_TAG);
   const options = {
     manifest,
-    renderToString: () => `<${appRootTag}${` id="${appRootId}"` }>${spaTemplate}</${appRootTag}>`,
+    renderToString: () => spaTemplate,
     buildAssetsURL
   };
   const renderer = createRenderer(() => () => {
   }, options);
   const result = await renderer.renderToString({});
   const renderToString = (ssrContext) => {
-    const config = useRuntimeConfig();
+    const config = useRuntimeConfig(ssrContext.event);
     ssrContext.modules = ssrContext.modules || /* @__PURE__ */ new Set();
     ssrContext.payload = {
       _errors: {},
@@ -175,7 +184,11 @@ const getSPARenderer = lazyCachedFunction(async () => {
     renderToString
   };
 });
-const PAYLOAD_URL_RE = /\/_payload(\.[a-zA-Z0-9]+)?.json(\?.*)?$/ ;
+const APP_TELEPORT_OPEN_TAG = `<${appTeleportTag} id="${appTeleportId}">` ;
+const APP_TELEPORT_CLOSE_TAG = `</${appTeleportTag}>` ;
+const APP_ROOT_OPEN_TAG = `<${appRootTag}${` id="${appRootId}"` }>`;
+const APP_ROOT_CLOSE_TAG = `</${appRootTag}>`;
+const PAYLOAD_URL_RE = /\/_payload.json(\?.*)?$/ ;
 const renderer = defineRenderHandler(async (event) => {
   const nitroApp = useNitroApp();
   const ssrError = event.path.startsWith("/__nuxt_error") ? getQuery(event) : null;
@@ -188,7 +201,7 @@ const renderer = defineRenderHandler(async (event) => {
       statusMessage: "Page Not Found: /__nuxt_error"
     });
   }
-  const isRenderingIsland = false ;
+  const isRenderingIsland = componentIslands ;
   const islandContext = void 0;
   let url = ssrError?.url || islandContext?.url || event.path;
   const isRenderingPayload = PAYLOAD_URL_RE.test(url) && !isRenderingIsland;
@@ -208,7 +221,7 @@ const renderer = defineRenderHandler(async (event) => {
   const ssrContext = {
     url,
     event,
-    runtimeConfig: useRuntimeConfig(),
+    runtimeConfig: useRuntimeConfig(event),
     noSSR: event.context.nuxt?.noSSR || routeOptions.ssr === false && !isRenderingIsland || (false),
     head,
     error: !!ssrError,
@@ -297,7 +310,10 @@ const renderer = defineRenderHandler(async (event) => {
     head: normalizeChunks([headTags, ssrContext.styles]),
     bodyAttrs: bodyAttrs ? [bodyAttrs] : [],
     bodyPrepend: normalizeChunks([bodyTagsOpen, ssrContext.teleports?.body]),
-    body: [_rendered.html],
+    body: [
+      _rendered.html,
+      APP_TELEPORT_OPEN_TAG + (joinTags([ssrContext.teleports?.[`#${appTeleportId}`]]) ) + APP_TELEPORT_CLOSE_TAG
+    ],
     bodyAppend: [bodyTags]
   };
   await nitroApp.hooks.callHook("render:html", htmlContext, { event });
@@ -331,7 +347,10 @@ function joinTags(tags) {
   return tags.join("");
 }
 function joinAttrs(chunks) {
-  return chunks.join(" ");
+  if (chunks.length === 0) {
+    return "";
+  }
+  return " " + chunks.join(" ");
 }
 function renderHTMLDocument(html) {
   return `<!DOCTYPE html><html${joinAttrs(html.htmlAttrs)}><head>${joinTags(html.head)}</head><body${joinAttrs(html.bodyAttrs)}>${joinTags(html.bodyPrepend)}${joinTags(html.body)}${joinTags(html.bodyAppend)}</body></html>`;
@@ -390,5 +409,5 @@ const renderer$1 = /*#__PURE__*/Object.freeze({
   default: renderer
 });
 
-export { buildAssetsURL as b, publicAssetsURL as p, renderer$1 as r };
+export { buildAssetsURL as a, baseURL as b, renderer$1 as r };
 //# sourceMappingURL=renderer.mjs.map

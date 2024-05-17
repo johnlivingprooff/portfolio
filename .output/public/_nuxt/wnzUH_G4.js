@@ -1,0 +1,1 @@
+import{_ as s,c as t,a as o,t as a,P as r,o as n}from"./CPHOIr_8.js";const c={async fetch(){this.$route.params.id}},l=o("h1",null,"Blog Post",-1);function i(e,p,_,d,u,f){return n(),t("div",null,[l,o("p",null,"Blog ID: "+a((e._.provides[r]||e.$route).params.id),1)])}const $=s(c,[["render",i]]);export{$ as default};

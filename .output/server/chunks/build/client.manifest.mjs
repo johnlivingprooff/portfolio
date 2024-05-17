@@ -1,10 +1,66 @@
 const client_manifest = {
-  "_vue.f36acd1f.dmz2BFPa.js": {
+  "_!~{00o}~.js": {
+    "resourceType": "style",
+    "prefetch": true,
+    "preload": true,
+    "file": "Contact.Bu03DutX.css",
+    "src": "_!~{00o}~.js"
+  },
+  "_BHWxEB3_.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "vue.f36acd1f.dmz2BFPa.js",
+    "file": "BHWxEB3_.js",
+    "name": "nuxt-link",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ]
+  },
+  "_Bhmv0mVZ.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "Bhmv0mVZ.js",
+    "name": "Contact",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js",
+      "_BHWxEB3_.js"
+    ],
+    "css": [
+      "Contact.Bu03DutX.css"
+    ],
+    "assets": [
+      "icon.BOUb3UTG.png",
+      "email.B_58GTIC.png"
+    ]
+  },
+  "Contact.Bu03DutX.css": {
+    "file": "Contact.Bu03DutX.css",
+    "resourceType": "style",
+    "prefetch": true,
+    "preload": true
+  },
+  "icon.BOUb3UTG.png": {
+    "file": "icon.BOUb3UTG.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "email.B_58GTIC.png": {
+    "file": "email.B_58GTIC.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "_BvQo6IwL.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "BvQo6IwL.js",
+    "name": "vue.f36acd1f",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -924,91 +980,87 @@ const client_manifest = {
   "node_modules/.cache/nuxt-google-fonts/fonts/Poppins-400-153.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Poppins-400-153.DXhQFdtL.woff2",
+    "file": "Poppins-400-153.CIpeJEZw.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Poppins-400-153.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Poppins-400-154.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Poppins-400-154.CZnfsGfc.woff2",
+    "file": "Poppins-400-154.cpxAROuN.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Poppins-400-154.woff2"
   },
-  "node_modules/.cache/nuxt-google-fonts/fonts/Poppins-400-155.woff2": {
+  "node_modules/.cache/nuxt-google-fonts/fonts/Qwigley-400-155.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Poppins-400-155.cpxAROuN.woff2",
-    "src": "node_modules/.cache/nuxt-google-fonts/fonts/Poppins-400-155.woff2"
+    "file": "Qwigley-400-155.CeJ9HyQX.woff2",
+    "src": "node_modules/.cache/nuxt-google-fonts/fonts/Qwigley-400-155.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Qwigley-400-156.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Qwigley-400-156.CeJ9HyQX.woff2",
+    "file": "Qwigley-400-156.C6_eL61n.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Qwigley-400-156.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Qwigley-400-157.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Qwigley-400-157.C6_eL61n.woff2",
+    "file": "Qwigley-400-157.IlFaxcOC.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Qwigley-400-157.woff2"
   },
-  "node_modules/.cache/nuxt-google-fonts/fonts/Qwigley-400-158.woff2": {
+  "node_modules/.cache/nuxt-google-fonts/fonts/Roboto-400-158.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Qwigley-400-158.IlFaxcOC.woff2",
-    "src": "node_modules/.cache/nuxt-google-fonts/fonts/Qwigley-400-158.woff2"
+    "file": "Roboto-400-158.DORK9bGA.woff2",
+    "src": "node_modules/.cache/nuxt-google-fonts/fonts/Roboto-400-158.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Roboto-400-159.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Roboto-400-159.DORK9bGA.woff2",
+    "file": "Roboto-400-159.DVDTZtmW.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Roboto-400-159.woff2"
   },
-  "node_modules/.cache/nuxt-google-fonts/fonts/Roboto-400-160.woff2": {
+  "node_modules/.cache/nuxt-google-fonts/fonts/Roboto-400-161.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Roboto-400-160.DVDTZtmW.woff2",
-    "src": "node_modules/.cache/nuxt-google-fonts/fonts/Roboto-400-160.woff2"
+    "file": "Roboto-400-161.BRWHCUYo.woff2",
+    "src": "node_modules/.cache/nuxt-google-fonts/fonts/Roboto-400-161.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Roboto-400-162.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Roboto-400-162.BRWHCUYo.woff2",
+    "file": "Roboto-400-162.kCRe3VZk.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Roboto-400-162.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Roboto-400-163.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Roboto-400-163.kCRe3VZk.woff2",
+    "file": "Roboto-400-163.4bLplyDh.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Roboto-400-163.woff2"
   },
   "node_modules/.cache/nuxt-google-fonts/fonts/Roboto-400-164.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
-    "file": "Roboto-400-164.4bLplyDh.woff2",
+    "file": "Roboto-400-164.mTIRXP6Y.woff2",
     "src": "node_modules/.cache/nuxt-google-fonts/fonts/Roboto-400-164.woff2"
-  },
-  "node_modules/.cache/nuxt-google-fonts/fonts/Roboto-400-165.woff2": {
-    "resourceType": "font",
-    "mimeType": "font/woff2",
-    "file": "Roboto-400-165.mTIRXP6Y.woff2",
-    "src": "node_modules/.cache/nuxt-google-fonts/fonts/Roboto-400-165.woff2"
   },
   "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "error-404.B_C9IM5G.js",
+    "file": "BJWVIQdV.js",
+    "name": "error-404",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
-      "node_modules/nuxt/dist/app/entry.js",
-      "_vue.f36acd1f.dmz2BFPa.js"
+      "_BHWxEB3_.js",
+      "_BvQo6IwL.js",
+      "node_modules/nuxt/dist/app/entry.js"
     ],
     "css": []
   },
-  "error-404.CoUbADi5.css": {
-    "file": "error-404.CoUbADi5.css",
+  "error-404.JekaaCis.css": {
+    "file": "error-404.JekaaCis.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -1018,17 +1070,18 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "error-500.BeFeKqce.js",
+    "file": "B_lG4KM8.js",
+    "name": "error-500",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_vue.f36acd1f.dmz2BFPa.js",
+      "_BvQo6IwL.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "css": []
   },
-  "error-500.BXQ_YkC0.css": {
-    "file": "error-500.BXQ_YkC0.css",
+  "error-500.CNP9nqm1.css": {
+    "file": "error-500.CNP9nqm1.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -1038,7 +1091,8 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "entry.doIDe-xC.js",
+    "file": "CPHOIr_8.js",
+    "name": "entry",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
     "dynamicImports": [
@@ -1047,24 +1101,530 @@ const client_manifest = {
     ],
     "_globalCSS": true
   },
+  "pages/About.vue": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "hzdpjBNk.js",
+    "name": "About",
+    "src": "pages/About.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ]
+  },
+  "pages/Projects.vue": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "Dv-yJK-b.js",
+    "name": "Projects",
+    "src": "pages/Projects.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_BHWxEB3_.js",
+      "node_modules/nuxt/dist/app/entry.js",
+      "_Bhmv0mVZ.js"
+    ],
+    "css": [],
+    "assets": [
+      "1.DSu-k1m9.png",
+      "2.BrtIosJy.png",
+      "3.CJfTmcYg.png",
+      "4.YTPOwz2j.png",
+      "5.8_NMwZpn.png",
+      "1.CdfXKhXb.jpg"
+    ]
+  },
+  "Projects.BCreahqg.css": {
+    "file": "Projects.BCreahqg.css",
+    "resourceType": "style",
+    "prefetch": true,
+    "preload": true
+  },
+  "1.DSu-k1m9.png": {
+    "file": "1.DSu-k1m9.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "2.BrtIosJy.png": {
+    "file": "2.BrtIosJy.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "3.CJfTmcYg.png": {
+    "file": "3.CJfTmcYg.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "4.YTPOwz2j.png": {
+    "file": "4.YTPOwz2j.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "5.8_NMwZpn.png": {
+    "file": "5.8_NMwZpn.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "1.CdfXKhXb.jpg": {
+    "file": "1.CdfXKhXb.jpg",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/jpeg"
+  },
+  "pages/blog/[_id].vue": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "wnzUH_G4.js",
+    "name": "__id_",
+    "src": "pages/blog/[_id].vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ]
+  },
   "pages/index.vue": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "index.Df-7s6Eo.js",
+    "file": "BxqTuioI.js",
+    "name": "index",
     "src": "pages/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Bhmv0mVZ.js",
+      "node_modules/nuxt/dist/app/entry.js",
+      "_BHWxEB3_.js"
+    ],
+    "dynamicImports": [
+      "public/img/slides/1.jpg",
+      "public/img/slides/anders-jilden-nxCtO8W9JLo-unsplash.jpg",
+      "public/img/slides/casey-horner-y7jrFSlVZAQ-unsplash.jpg",
+      "public/img/slides/christopher-burns-pzMP-RGJ7mY-unsplash.jpg",
+      "public/img/slides/daniel-lee-KB2cHm0pZAU-unsplash.jpg",
+      "public/img/slides/denys-nevozhai-2vmT5_FeMck-unsplash.jpg",
+      "public/img/slides/dina-SqSY0AWFgjc-unsplash.jpg",
+      "public/img/slides/erik-mclean-QzpgqElvSiA-unsplash.jpg",
+      "public/img/slides/farhad-ibrahimzade-1VeYwfqR92s-unsplash.jpg",
+      "public/img/slides/garden_fountain.jpg",
+      "public/img/slides/gilles-lambert-pb_lF8VWaPU-unsplash.jpg",
+      "public/img/slides/nicolai-berntsen-F3uyey6ours-unsplash.jpg",
+      "public/img/slides/ryan-moreno-CAQV_lXm_iw-unsplash.jpg",
+      "public/img/slides/z-grills-australia-64T9z7Or6-s-unsplash.jpg"
+    ],
+    "css": [],
+    "assets": [
+      "scroll.C83-Uykc.png",
+      "stars.BY6JOUjH.jpg",
+      "purple-flower.orWZFNDT.jpg"
+    ]
+  },
+  "index.BF9y57Ac.css": {
+    "file": "index.BF9y57Ac.css",
+    "resourceType": "style",
+    "prefetch": true,
+    "preload": true
+  },
+  "scroll.C83-Uykc.png": {
+    "file": "scroll.C83-Uykc.png",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png"
+  },
+  "stars.BY6JOUjH.jpg": {
+    "file": "stars.BY6JOUjH.jpg",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/jpeg"
+  },
+  "purple-flower.orWZFNDT.jpg": {
+    "file": "purple-flower.orWZFNDT.jpg",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/jpeg"
+  },
+  "public/img/icon.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "icon.BOUb3UTG.png",
+    "src": "public/img/icon.png"
+  },
+  "public/img/projects/1.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "1.DSu-k1m9.png",
+    "src": "public/img/projects/1.png"
+  },
+  "public/img/projects/2.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "2.BrtIosJy.png",
+    "src": "public/img/projects/2.png"
+  },
+  "public/img/projects/3.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "3.CJfTmcYg.png",
+    "src": "public/img/projects/3.png"
+  },
+  "public/img/projects/4.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "4.YTPOwz2j.png",
+    "src": "public/img/projects/4.png"
+  },
+  "public/img/projects/5.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "5.8_NMwZpn.png",
+    "src": "public/img/projects/5.png"
+  },
+  "public/img/purple-flower.jpg": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/jpeg",
+    "file": "purple-flower.orWZFNDT.jpg",
+    "src": "public/img/purple-flower.jpg"
+  },
+  "public/img/scroll.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "scroll.C83-Uykc.png",
+    "src": "public/img/scroll.png"
+  },
+  "public/img/slides/1.jpg": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "CwL3hJ3d.js",
+    "name": "1",
+    "src": "public/img/slides/1.jpg",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
-    "css": []
+    "assets": [
+      "1.CdfXKhXb.jpg"
+    ]
   },
-  "index.C8b6GVSI.css": {
-    "file": "index.C8b6GVSI.css",
-    "resourceType": "style",
+  "public/img/slides/anders-jilden-nxCtO8W9JLo-unsplash.jpg": {
+    "resourceType": "script",
+    "module": true,
     "prefetch": true,
-    "preload": true
+    "preload": true,
+    "file": "DIJUlBv_.js",
+    "name": "anders-jilden-nxCtO8W9JLo-unsplash",
+    "src": "public/img/slides/anders-jilden-nxCtO8W9JLo-unsplash.jpg",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ],
+    "assets": [
+      "anders-jilden-nxCtO8W9JLo-unsplash.CpWzpl2n.jpg"
+    ]
+  },
+  "anders-jilden-nxCtO8W9JLo-unsplash.CpWzpl2n.jpg": {
+    "file": "anders-jilden-nxCtO8W9JLo-unsplash.CpWzpl2n.jpg",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/jpeg"
+  },
+  "public/img/slides/casey-horner-y7jrFSlVZAQ-unsplash.jpg": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "g1M8863l.js",
+    "name": "casey-horner-y7jrFSlVZAQ-unsplash",
+    "src": "public/img/slides/casey-horner-y7jrFSlVZAQ-unsplash.jpg",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ],
+    "assets": [
+      "casey-horner-y7jrFSlVZAQ-unsplash.Cj0SoTF2.jpg"
+    ]
+  },
+  "casey-horner-y7jrFSlVZAQ-unsplash.Cj0SoTF2.jpg": {
+    "file": "casey-horner-y7jrFSlVZAQ-unsplash.Cj0SoTF2.jpg",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/jpeg"
+  },
+  "public/img/slides/christopher-burns-pzMP-RGJ7mY-unsplash.jpg": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "MswZOEgb.js",
+    "name": "christopher-burns-pzMP-RGJ7mY-unsplash",
+    "src": "public/img/slides/christopher-burns-pzMP-RGJ7mY-unsplash.jpg",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ],
+    "assets": [
+      "christopher-burns-pzMP-RGJ7mY-unsplash.HrjNpTGy.jpg"
+    ]
+  },
+  "christopher-burns-pzMP-RGJ7mY-unsplash.HrjNpTGy.jpg": {
+    "file": "christopher-burns-pzMP-RGJ7mY-unsplash.HrjNpTGy.jpg",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/jpeg"
+  },
+  "public/img/slides/daniel-lee-KB2cHm0pZAU-unsplash.jpg": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "DPVdN0bO.js",
+    "name": "daniel-lee-KB2cHm0pZAU-unsplash",
+    "src": "public/img/slides/daniel-lee-KB2cHm0pZAU-unsplash.jpg",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ],
+    "assets": [
+      "daniel-lee-KB2cHm0pZAU-unsplash.DrDSTkeT.jpg"
+    ]
+  },
+  "daniel-lee-KB2cHm0pZAU-unsplash.DrDSTkeT.jpg": {
+    "file": "daniel-lee-KB2cHm0pZAU-unsplash.DrDSTkeT.jpg",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/jpeg"
+  },
+  "public/img/slides/denys-nevozhai-2vmT5_FeMck-unsplash.jpg": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "CtyepVl3.js",
+    "name": "denys-nevozhai-2vmT5_FeMck-unsplash",
+    "src": "public/img/slides/denys-nevozhai-2vmT5_FeMck-unsplash.jpg",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ],
+    "assets": [
+      "denys-nevozhai-2vmT5_FeMck-unsplash.Ce67oZHg.jpg"
+    ]
+  },
+  "denys-nevozhai-2vmT5_FeMck-unsplash.Ce67oZHg.jpg": {
+    "file": "denys-nevozhai-2vmT5_FeMck-unsplash.Ce67oZHg.jpg",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/jpeg"
+  },
+  "public/img/slides/dina-SqSY0AWFgjc-unsplash.jpg": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "D5iO8Sk0.js",
+    "name": "dina-SqSY0AWFgjc-unsplash",
+    "src": "public/img/slides/dina-SqSY0AWFgjc-unsplash.jpg",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ],
+    "assets": [
+      "dina-SqSY0AWFgjc-unsplash.D6yWvxT-.jpg"
+    ]
+  },
+  "dina-SqSY0AWFgjc-unsplash.D6yWvxT-.jpg": {
+    "file": "dina-SqSY0AWFgjc-unsplash.D6yWvxT-.jpg",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/jpeg"
+  },
+  "public/img/slides/erik-mclean-QzpgqElvSiA-unsplash.jpg": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "QGe4wwxQ.js",
+    "name": "erik-mclean-QzpgqElvSiA-unsplash",
+    "src": "public/img/slides/erik-mclean-QzpgqElvSiA-unsplash.jpg",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ],
+    "assets": [
+      "erik-mclean-QzpgqElvSiA-unsplash.nTV8z268.jpg"
+    ]
+  },
+  "erik-mclean-QzpgqElvSiA-unsplash.nTV8z268.jpg": {
+    "file": "erik-mclean-QzpgqElvSiA-unsplash.nTV8z268.jpg",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/jpeg"
+  },
+  "public/img/slides/farhad-ibrahimzade-1VeYwfqR92s-unsplash.jpg": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "DCoCSnX4.js",
+    "name": "farhad-ibrahimzade-1VeYwfqR92s-unsplash",
+    "src": "public/img/slides/farhad-ibrahimzade-1VeYwfqR92s-unsplash.jpg",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ],
+    "assets": [
+      "farhad-ibrahimzade-1VeYwfqR92s-unsplash.BqHgl8qw.jpg"
+    ]
+  },
+  "farhad-ibrahimzade-1VeYwfqR92s-unsplash.BqHgl8qw.jpg": {
+    "file": "farhad-ibrahimzade-1VeYwfqR92s-unsplash.BqHgl8qw.jpg",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/jpeg"
+  },
+  "public/img/slides/garden_fountain.jpg": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "CWH8gQXs.js",
+    "name": "garden_fountain",
+    "src": "public/img/slides/garden_fountain.jpg",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ],
+    "assets": [
+      "garden_fountain.BbR2ABrb.jpg"
+    ]
+  },
+  "garden_fountain.BbR2ABrb.jpg": {
+    "file": "garden_fountain.BbR2ABrb.jpg",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/jpeg"
+  },
+  "public/img/slides/gilles-lambert-pb_lF8VWaPU-unsplash.jpg": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "CqtKciFk.js",
+    "name": "gilles-lambert-pb_lF8VWaPU-unsplash",
+    "src": "public/img/slides/gilles-lambert-pb_lF8VWaPU-unsplash.jpg",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ],
+    "assets": [
+      "gilles-lambert-pb_lF8VWaPU-unsplash.DWDftAA7.jpg"
+    ]
+  },
+  "gilles-lambert-pb_lF8VWaPU-unsplash.DWDftAA7.jpg": {
+    "file": "gilles-lambert-pb_lF8VWaPU-unsplash.DWDftAA7.jpg",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/jpeg"
+  },
+  "public/img/slides/nicolai-berntsen-F3uyey6ours-unsplash.jpg": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "B0UKGZW9.js",
+    "name": "nicolai-berntsen-F3uyey6ours-unsplash",
+    "src": "public/img/slides/nicolai-berntsen-F3uyey6ours-unsplash.jpg",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ],
+    "assets": [
+      "nicolai-berntsen-F3uyey6ours-unsplash.CcrHkWpX.jpg"
+    ]
+  },
+  "nicolai-berntsen-F3uyey6ours-unsplash.CcrHkWpX.jpg": {
+    "file": "nicolai-berntsen-F3uyey6ours-unsplash.CcrHkWpX.jpg",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/jpeg"
+  },
+  "public/img/slides/ryan-moreno-CAQV_lXm_iw-unsplash.jpg": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "DJoebc-3.js",
+    "name": "ryan-moreno-CAQV_lXm_iw-unsplash",
+    "src": "public/img/slides/ryan-moreno-CAQV_lXm_iw-unsplash.jpg",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ],
+    "assets": [
+      "ryan-moreno-CAQV_lXm_iw-unsplash.DSR3gVqN.jpg"
+    ]
+  },
+  "ryan-moreno-CAQV_lXm_iw-unsplash.DSR3gVqN.jpg": {
+    "file": "ryan-moreno-CAQV_lXm_iw-unsplash.DSR3gVqN.jpg",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/jpeg"
+  },
+  "public/img/slides/z-grills-australia-64T9z7Or6-s-unsplash.jpg": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "B06rms6M.js",
+    "name": "z-grills-australia-64T9z7Or6-s-unsplash",
+    "src": "public/img/slides/z-grills-australia-64T9z7Or6-s-unsplash.jpg",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ],
+    "assets": [
+      "z-grills-australia-64T9z7Or6-s-unsplash.TxEqRUh7.jpg"
+    ]
+  },
+  "z-grills-australia-64T9z7Or6-s-unsplash.TxEqRUh7.jpg": {
+    "file": "z-grills-australia-64T9z7Or6-s-unsplash.TxEqRUh7.jpg",
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/jpeg"
+  },
+  "public/img/socials/email.png": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/png",
+    "file": "email.B_58GTIC.png",
+    "src": "public/img/socials/email.png"
+  },
+  "public/img/stars.jpg": {
+    "resourceType": "image",
+    "prefetch": true,
+    "mimeType": "image/jpeg",
+    "file": "stars.BY6JOUjH.jpg",
+    "src": "public/img/stars.jpg"
   }
 };
 
