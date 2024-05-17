@@ -4,7 +4,6 @@
             v-for="link in links"
             :key="link.id"
             :to="link.url"
-            :class="{ active: isActive(link.url), inactive: !isActive(link.url) }"
             class="link"
         >
             {{ link.label }}
@@ -21,7 +20,7 @@ export default {
                 // { id: 2, label: 'About', url: '#about' },
                 { id: 3, label: 'Projects', url: '/projects' },
                 // { id: 4, label: 'Feedback', url: '#testimonials' },
-                { id: 5, label: 'Blog', url: '/blog' },
+                // { id: 5, label: 'Blog', url: '/blog' },
                 { id: 6, label: 'Contact', url: '#contact' },
             ],
         };
