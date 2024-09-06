@@ -8,6 +8,7 @@
       </ul>
     </header>
     <NuxtPage />
+    <Foot />
   </div>
 </template>
 
@@ -17,7 +18,9 @@
 body {
   background-image: url('~/assets/imgs/bg01.jpg');
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .nav {
@@ -30,6 +33,7 @@ body {
   display: flex;
   justify-content: center;
   width: 100vh;
+  z-index: 1000;
 }
 
 .nav ul {
@@ -39,5 +43,19 @@ body {
   list-style-type: none;
 }
 
+.foot{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  
+}
+
+/* mobile view */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+}
 
 </style>

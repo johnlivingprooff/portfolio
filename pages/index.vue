@@ -4,6 +4,7 @@
             <span class="comp-one"><img src="../assets/imgs/logo.png" alt="#johnlivingprooff" id="logo">
             <Welcome /></span>
             <about />
+            <write />
         </div>
     </div>
 </template>
@@ -34,5 +35,6 @@
     align-items: center;
     flex-direction: column;
     height: 100vh;
+    width: 100%;
 }
 </style>
