@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main_cont">
     <header class='nav'>
       <ul>
         <li><nuxt-link to="/">Home</nuxt-link></li>
@@ -8,7 +8,7 @@
       </ul>
     </header>
     <NuxtPage />
-    <Foot />
+    <!-- <Foot /> -->
   </div>
 </template>
 
@@ -21,6 +21,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.main_cont {
+  width: 100%;
 }
 
 .nav {

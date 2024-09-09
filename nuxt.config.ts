@@ -14,4 +14,15 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  
+  app: {
+    head: {
+      titleTemplate: '%s - JLP',
+      title: '#johnlivingprooff',
+      meta: [
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { hid: 'description', name: 'description', content: 'Default description' },
+      ],
+    },
+  },
 })
